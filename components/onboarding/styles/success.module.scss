@@ -1,0 +1,157 @@
+@keyframes swipe_up {
+    0% {
+        top: 800px;		
+    }	
+    100% {
+        top: 0px;
+    }
+}
+
+
+
+#onboard {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #F6F6F9;
+    overflow: hidden;
+
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
+
+    & .wrap {
+        width: 50%;
+        background: #F6F6F9;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: auto;
+        padding-bottom: 41px;
+
+        @media (max-width: 1000px) {
+            width: 100%;
+            padding-bottom: 0;
+            padding-top: 41px;
+        }
+
+        & .form {
+            position: relative;
+            width: 90%;
+            height: 100%;
+            background-color: antiquewhite;
+            background: #FEFDFF;
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-left: 45px;
+            padding-right: 77px;
+            padding-bottom: 128px; 
+
+            @media (max-width: 1000px) {
+                width: 70%;
+                padding-right: 45px;
+                border-radius: 20px 20px 0px 0px; 
+                animation-name: swipe_up;
+                animation-timing-function: ease-in;
+                animation-duration: .8s;	
+                animation-fill-mode: forwards;	
+            }
+
+            @media (max-width: 600px) {
+                width: 100%;
+                padding-right: 30px;
+                padding-left: 30px;
+                border-radius: 20px 20px 0px 0px; 
+                animation-name: swipe_up;
+                animation-timing-function: ease-in;
+                animation-duration: .8s;	
+                animation-fill-mode: forwards;	
+            }
+
+            & .logo {
+                margin-top: 58px;
+                margin-bottom: 82px;
+            }
+
+            & .texts {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                margin-bottom: 50px;
+
+                & h3 {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 29px;
+                    color: #101525;
+                }
+                & p {
+                    font-family: 'Outfit';
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #000000;
+                    opacity: 0.6;
+                }
+            }
+
+            & .submit {
+                margin-top: 72px;
+                width: 100%;
+                height: fit-content;
+
+                & button {
+                    width: 256px;
+                    height: 56px;
+                    background: #4285DE;
+                    border-radius: 5px;
+                    font-family: 'Outfit', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 100%;
+                    text-align: center;
+                    color: #FFFFFF;
+                    outline: 0;
+                    border: 0;
+
+                    @media (max-width: 1200px) {
+                        width: 100%;
+                    }
+
+                    @media (max-width: 1000px) {
+                        width: 80%;
+                    }
+
+                    @media (max-width: 700px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            & .option {
+                margin-top: 20px;
+                width: 100%;
+
+                & small {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: #6D707A;
+
+                    & a {
+                        font-weight: 400;
+                        color: #4285DE;
+                        font-family: 'Outfit', sans-serif;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

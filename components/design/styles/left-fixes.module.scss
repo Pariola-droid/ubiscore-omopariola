@@ -1,0 +1,66 @@
+.left {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #141933;
+    padding-top: 103px;
+    padding-left: 142px;
+
+    @media (max-width: 1200px) {
+        padding-left: 80px;
+    }
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+    
+    & #svg1 {
+        position: absolute;
+        top: 0;
+        left: 0;  
+    }
+    & #svg2 {
+        position: absolute;
+        top: 195px;
+        right: 20%;  
+    }
+
+    & .wrapped {
+        width: 403px;
+        height: fit-content;
+
+        & .text {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+    
+            & h3 {
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 160%;
+                text-align: left;
+                color: #FFFFFF;
+            }
+    
+            & small {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                text-align: center;
+                opacity: 0.6;
+                color: #FFFFFF;
+                margin-top: 2px;
+            }
+            & p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 160%;
+                color: #FFFFFF;
+                max-width: 403px;
+            }
+        }
+    }
+    
+}

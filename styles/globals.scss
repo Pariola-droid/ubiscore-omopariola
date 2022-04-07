@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800&family=Outfit:wght@200;300;400;500&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Epilogue", sans-serif;
+  line-height: 17.38px;
+}
+
+::selection{
+  background: #0f0f0f75;
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  line-height: 17.38px;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 0;
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+
+  & a {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+a {
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transition-property: opacity, color, background-color, -webkit-transform, border;
+    -webkit-transition-property: opacity, color, background-color, transform, border;
+    transition-property: opacity, color, background-color, transform, border;
+  }
+
+h1,h2,h3,h4,h5,h6 {
+  margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+// slider styles
+.magic-dots {
+  margin: 0 !important;
+  padding: 0 !important;
+  left: -5px !important;
+}
+
+.slick-dots li button:before {
+  color: #FFFFFF !important;
+  opacity: 0.15 !important;
+  border-radius: 10px;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1 !important;
+    color: #fff !important; 
+}
+
+.slick-dots {
+  margin: 0 !important;
+}
+
+.slick-dots li
+{
+    width: 20px;
+    height: 20px;
+    margin: 0 !important;
+    margin-right: 7px !important;
+}
+
+
+.success {
+  border: 1px solid #D6D8DC !important;
+}
+
+.error {
+  border: 1px solid #FF939C !important;
+}
+
+.err-display {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  font-family: 'Outfit', sans-serif;
+  color: #FF939C;
+  max-width: 377px;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: 35px;
+}
